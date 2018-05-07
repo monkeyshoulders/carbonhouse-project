@@ -319,16 +319,34 @@ footer {
 
 .social-tab-links li {
   background-color: #000;
-  padding: 1rem;
+  padding: .8rem;
   flex-grow: 1;
   display: inline;
   text-align: center;
-  border: .0625rem solid #fff;
+  border-top: .15rem solid #fff;
 }
 
-.social-tab-links li:hover {
-  background-color: #ff4dff;
+.social-tab-links li:nth-child(even) {
+  border-left: .0625rem solid #fff;
+  border-right: .0625rem solid #fff;
+}
 
+.social-tab-links #tab-1:hover {
+  background-color: #ff4dff;
+  border-top: .15rem solid #000;
+  transform: translateY(.15rem);
+}
+
+.social-tab-links #tab-2:hover {
+  background-color: #ff4dff;
+  border-top: .15rem solid #000;
+  transform: translateY(.15rem);
+}
+
+.social-tab-links #tab-3:hover {
+  background-color: #ff4dff;
+  border-top: .15rem solid #000;
+  transform: translateY(.15rem);
 }
 
 .social-tab-links a {
