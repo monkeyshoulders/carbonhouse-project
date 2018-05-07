@@ -109,11 +109,11 @@ nav li a {
   height: 3.5em;
 }
 
-li {
+ nav li {
   float: left;
 }
 
-li a:hover {
+ nav li a:hover {
   background: #de53f3;
 }
 
@@ -273,4 +273,223 @@ hr {
 .newsletter-box  a:hover {
   background-color: #ff4dff;
   border: 2px solid #ff4dff;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin: 3em 3.5em;
+
+}
+
+.social {
+  justify-content: center;
+  overflow: scroll;
+
+}
+
+.social h1 {
+  font-weight: 400;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.social span {
+  font-family: 'Merriweather', sans-serif;
+  font-size: .6em;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: #ff4dff;
+}
+
+.social-tab-links {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.social-tab-links li {
+  background-color: #000;
+  padding: 1em;
+  flex-grow: 1;
+  display: inline;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.social-tab-links li:hover {
+  background-color: #ff4dff;
+
+}
+
+.social-tab-links a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1.2px;
+}
+
+.social-tab-display {
+  background-color: #e1e1e1;
+  margin-top: 10px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.social-tab-display h1 {
+  font-weight: 400;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0 10px;
+}
+
+.social-tab-display span {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #ff4dff;
+}
+
+.social-tab-display i {
+  color: #ff4dff;
+  font-size: 1.5em;
+
+}
+
+.social-tab-display i:nth-child(odd) {
+  padding-right: 10px;
+}
+
+.social-tab-display-tweet {
+  display: inline-flex;
+  background: #e1e1e1;
+
+}
+
+.tweet {
+  overflow-x: auto;
+  width: 270px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  padding-bottom: 20px;
+
+}
+
+.tweet-card {
+  background: #fff;
+  padding: 20px;
+}
+
+.tweet-heading {
+  display: flex;
+}
+
+.tweet-heading i {
+  color: #ff66ff;
+  font-size: 1.3em;
+}
+
+.tweet-heading p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.tweet-content p {
+  padding: 5px 0;
+  padding-bottom: 30px;
+  line-height: 1.4;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+}
+
+.tweet-content p span {
+  color: #ff66ff;
+  font-family: 'Lato', sans-serif;
+  font-size: .9em;
+  text-transform: none;
+}
+
+.tweet-info {
+  font-family: "Lato" sans-serif;
+  background: #ff66ff;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.tweet-actions {
+  align-self: center;
+}
+
+.tweet-actions i {
+  color: white;
+  padding: 0 3px;
+}
+
+.directions h1 {
+  font-weight: 400;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.directions span {
+  font-family: 'Merriweather', sans-serif;
+  font-size: .6em;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: #ff4dff;
+}
+
+.address {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  height: 3.5em;
+}
+
+.address h4 {
+  margin: 0;
+  padding: 0;
+  padding-right: 1em;
+  letter-spacing: 1.2px;
+}
+
+.address h5 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.map-container {
+  padding: 10px;
+  background: #f5f5f5;
+}
+
+#map {
+  width: 100%;
+  height: 355px;
 }
