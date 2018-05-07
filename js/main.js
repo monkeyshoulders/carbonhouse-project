@@ -7,10 +7,11 @@ var infoWindowContent = '<div id="infoContent">'+
 
 function initMap() {
         var chVenue = {lat: 35.158513, lng: -80.888407};
-        var mapCenter = {lat: 35.157498, lng: -80.877033}
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var mapCenter = {lat: 35.158851, lng: -80.875860}
+        var map = new  google.maps.Map(document.getElementById('map'), {
           zoom: 14,
-          center: mapCenter
+          center: mapCenter,
+          disableDefaultUI: true
         });
         var infowindow = new google.maps.InfoWindow({
           content: infoWindowContent,
