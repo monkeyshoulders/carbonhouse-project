@@ -10,7 +10,7 @@
  */
 
  html {
-   font-size: 16px;
+   font-size: 10px;
  }
 
 body {
@@ -40,7 +40,7 @@ header {
 }
 
 .get-connected i {
-  padding: 0 .625rem;
+  padding: 0 .75rem;
   color: black;
 }
 
@@ -49,9 +49,11 @@ header {
 }
 
 .search-events input {
-  padding: .375rem 1.25rem;
+  margin: 0 .75rem;
+  margin-right: 0;
+  padding: .375rem 1rem;
   border-radius: 5rem;
-  width: 16.8rem;
+  width: 18rem;
   background-color: #ddd;
 }
 
@@ -71,6 +73,9 @@ header {
 
 .login p {
   margin: 0 .625rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
 .login i {
@@ -105,10 +110,10 @@ nav li a {
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2..3rem;
+  letter-spacing: .1rem;
   color: white;
   text-align: center;
-  padding: 1rem 4rem;
+  padding: 1rem 3.8rem;
   text-decoration: none;
   height: 3.5rem;
 }
@@ -319,7 +324,7 @@ footer {
 
 .social-tab-links li {
   background-color: #000;
-  padding: .8rem;
+  padding: .74rem;
   flex-grow: 1;
   display: inline;
   text-align: center;
@@ -358,7 +363,7 @@ footer {
 
 .social-tab-display {
   background-color: #e1e1e1;
-  margin-top: .625rem;
+  margin-top: 1rem;
   padding: 0 1.125rem;
   display: flex;
   justify-content: space-between;
@@ -486,7 +491,8 @@ footer {
   align-items: center;
   color: #fff;
   text-transform: uppercase;
-  height: 3.5rem;
+  height: 3rem;
+  transform: translateY(2px);
 }
 
 .address h4 {
@@ -505,11 +511,68 @@ footer {
 }
 
 .map-container {
-  padding: .625rem;
+  padding: .8rem;
   background: #f5f5f5;
 }
 
 #map {
   width: 100%;
   height: 20rem;
+}
+
+@media screen and (min-width: 500px){
+  html{
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 570px){
+  html{
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 620px){
+  html{
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 680px){
+  html{
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px){
+  html{
+    font-size: 11.5px;
+  }
+}
+@media screen and (min-width: 1024px){
+  html{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1100px){
+  html{
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px){
+  html{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1400px){
+  html{
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1600px){
+  html{
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 2000px){
+  html{
+    font-size: 22px;
+  }
+
 }
