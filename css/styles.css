@@ -380,7 +380,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0 1rem; */
+  margin: 0 1rem;
 }
 
 .social-tab-display h1 {
@@ -401,6 +401,10 @@ footer {
 .social-tab-display i {
   color: #ff4dff;
   font-size: 1.5rem;
+}
+
+.social-tab-display i:last-of-type {
+  padding-left: .5rem;
 }
 
 .social-tab-display-tweet {
