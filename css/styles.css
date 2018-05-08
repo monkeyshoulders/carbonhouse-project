@@ -402,9 +402,11 @@ footer {
   color: #ff4dff;
 }
 
-.social-tab-display i {
+.social-tab-display-nav i {
   color: #ff4dff;
   font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
 }
 
 .social-tab-display i:last-of-type {
@@ -416,7 +418,6 @@ footer {
   min-width: 100%;
   background: #e1e1e1;
   overflow-x: auto;
-
 }
 
 .tweet {

@@ -25,3 +25,18 @@ function initMap() {
           infowindow.open(map, marker);
         });
       }
+
+
+function scrollL() {
+  var left = document.getElementById('left');
+  left.onclick = function() {
+    document.getElementById('scroll').scrollLeft -= 250;
+  }
+}
+
+function scrollR() {
+  var right = document.getElementById('right');
+  right.onclick = function() {
+    document.getElementById('scroll').scrollLeft += 250;
+  }
+}
