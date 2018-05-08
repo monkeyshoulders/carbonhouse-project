@@ -55,6 +55,8 @@ header {
   border-radius: 5rem;
   width: 18rem;
   background-color: #ddd;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .1rem;
 }
 
 .search-events img {
@@ -302,7 +304,7 @@ footer {
 
 .social {
   justify-content: center;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .social h1 {
@@ -368,14 +370,17 @@ footer {
   letter-spacing: .075rem;
 }
 
-.social-tab-display {
+.social-tab-container {
   background-color: #e1e1e1;
   margin-top: 1rem;
-  padding: 0 1.125rem;
+  padding: 0 1rem;
+}
+
+.social-tab-display {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  /* margin: 0 1rem; */
 }
 
 .social-tab-display h1 {
@@ -383,7 +388,6 @@ footer {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: .15rem;
-  padding: 0 .625rem;
 }
 
 .social-tab-display span {
@@ -397,30 +401,25 @@ footer {
 .social-tab-display i {
   color: #ff4dff;
   font-size: 1.5rem;
-
-}
-
-.social-tab-display i:nth-child(odd) {
-  padding-right: .625rem;
 }
 
 .social-tab-display-tweet {
-  display: inline-flex;
+  display: flex;
+  min-width: 100%;
   background: #e1e1e1;
+  overflow-x: auto;
 
 }
 
 .tweet {
-  overflow-x: auto;
-  width: 15rem;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  margin: 0 0 1.5rem .75rem;
+  margin: 0 .75rem 1.5rem 0;
 }
 
 .tweet-card {
   background: #fff;
-  padding: 1rem .5rem 1.2rem .5rem;
+  padding: 1rem .7rem 1.2rem .7rem;
 }
 
 .tweet-heading {
