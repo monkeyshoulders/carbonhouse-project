@@ -549,6 +549,14 @@ body {
   width: 100%;
 }
 
+/* .info-window {
+  position: absolute;
+  right: 18rem;
+  top: 130.5rem;
+  width: 12rem;
+  z-index: 10;
+} */
+
 @media screen and (min-width: 300px) and (max-width: 500px) {
   .header {
     display: none;
@@ -556,7 +564,7 @@ body {
   .navigation {
     padding: .75rem;
   }
-  .navigaton ul {
+  .navigation ul {
     display: none;
   }
   .logo img {
@@ -567,7 +575,7 @@ body {
   }
   .hamburger {
     display: block;
-    padding: 1rem 2rem;
+    padding: 2.5rem;
   }
   .navigation i {
     align-self: center;

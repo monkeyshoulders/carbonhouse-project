@@ -3,7 +3,8 @@ var apiKey = "AIzaSyD-suI9h90w9KXnNIcMxqpB9s6f4q2L3-I";
 
 function initMap() {
         var chVenue = {lat: 35.158513, lng: -80.888407};
-        var mapCenter = {lat: 35.158031, lng: -80.884076};
+        var chInfoPin = {lat:35.153060, lng:-80.878022};
+        var mapCenter = {lat: 35.156209, lng: -80.877507};
         var pin = 'img/Wayfairer.png';
         var infoAddress = 'img/address-callout.png';
         var map = new  google.maps.Map(document.getElementById('map'), {
@@ -11,14 +12,17 @@ function initMap() {
           center: mapCenter,
           disableDefaultUI: true
         });
-        var marker = new google.maps.Marker({
+        var marker1 = new google.maps.Marker({
           position: chVenue,
           map: map,
           icon: pin
         });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
+        // var marker2 = new google.maps.Marker({
+        //   position: chInfoPin,
+        //   map: map,
+        //   icon: infoAddress
+        // });
+
       }
 
 
