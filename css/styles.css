@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 
-header {
+.header {
   display: flex;
   height: 2.5rem;
   justify-content: flex-end;
@@ -90,7 +90,7 @@ header {
   width: 1.5rem;
 }
 
-nav {
+.navigation {
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@ nav {
   display: none;
 }
 
-nav ul {
+.navigation ul {
   background-color: #000;
   list-style: none;
   margin: 0;
@@ -116,7 +116,7 @@ nav ul {
   padding: 0;
 }
 
-nav li a {
+.navigation li a {
   align-items: center;
   color: white;
   display: flex;
@@ -129,15 +129,15 @@ nav li a {
   text-decoration: none;
 }
 
-nav li {
+.navigation li {
   float: left;
 }
 
-nav li a:hover {
+.navigation li a:hover {
   background: #d345e8;
 }
 
-main {
+.main-events {
   background-color: #e5e5e5;
   margin: 0;
   padding: 1rem 3rem;
@@ -313,7 +313,7 @@ main {
   border: .125rem solid #ff4dff;
 }
 
-footer {
+.footer {
   display: grid;
   grid-gap: 1.3rem;
   grid-template-columns: 1fr 1fr;
@@ -551,13 +551,13 @@ footer {
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
-  header {
+  .header {
     display: none;
   }
-  nav {
+  .navigation {
     padding: .75rem;
   }
-  nav ul {
+  .navigaton ul {
     display: none;
   }
   .logo img {
@@ -570,13 +570,13 @@ footer {
     display: block;
     padding: 1rem 2rem;
   }
-  nav i {
+  .navigation i {
     align-self: center;
     display: flex;
     color: #fff;
     padding-right: 1rem;
   }
-  main {
+  .main-events {
     padding: 1rem;
   }
   .upcoming-events {
@@ -712,7 +712,7 @@ footer {
   .newsletter-box br {
     display: block;
   }
-  footer {
+  .footer {
     grid-template-columns: 1fr;
   }
 }
