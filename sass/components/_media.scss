@@ -1,0 +1,299 @@
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .header {
+    display: none;
+  }
+
+  .navigation {
+    padding: .75rem;
+
+    &-list {
+      display: none;
+    }
+
+    &-logo-img {
+      margin: 0;
+      padding-left: .75rem;
+      position: relative;
+      width: 20rem;
+    }
+
+    &-logo-hamburger {
+      display: block;
+      padding: 1rem 2rem;
+    }
+  }
+  // .navigation i {
+  //   align-self: center;
+  //   display: flex;
+  //   color: #fff;
+  //   padding-right: 1rem;
+
+  .main-events {
+    padding: 1rem;
+  }
+  .upcoming {
+    align-items: center;
+    justify-content: center;
+
+    &-heading {
+      font-size: 4.5rem;
+      letter-spacing: .5rem;
+      margin: 2rem 0;
+    }
+
+    &-layout {
+      display: none;
+    }
+  }
+
+  .hr {
+    background-color: #000;
+    height: .25rem;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin: 0;
+  }
+
+  .event-card {
+    display: none;
+  }
+
+  .card-m {
+    background-color: white;
+    display: block;
+    margin: 3rem auto;
+    width: 100%;
+
+    &-event {
+      display: flex;
+
+      &-img {
+        height: 16em;
+        padding: 10px 0 15px 10px;
+        width: 20em;
+      }
+
+      &-details {
+        padding: 10px;
+        text-align: left;
+
+        &-main {
+          color: #ff66ff;
+          font-weight: 400;
+          font-size: 4rem;
+          letter-spacing: .25rem;
+          margin: 0;
+          text-transform: uppercase;
+
+          &:last-of-type {
+            line-height: 5rem;
+          }
+        }
+
+        &-sub {
+          font-family: 'Merriweather', serif;
+          font-size: 2.5rem;
+          font-weight: 400;
+          letter-spacing: .25rem;
+          margin: 5px 0;
+          padding: 0;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    &-sch {
+      background-color: #000;
+      color: #ff66ff;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -5px;
+
+      &-date {
+        font-size: 2.4rem;
+        margin: .8em;
+        padding-left: 1rem;
+        text-transform: uppercase;
+      }
+
+      &-day {
+        background: url('https://raw.githubusercontent.com/monkeyshoulders/carbonhouse-project/master/img/day-rectangle.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 5px;
+        padding: 0 20px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &-buy-tix-m {
+      text-decoration: none;
+
+      &-buy-tix-m-box {
+        background: #d345e8;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        &-img {
+          align-self: center;
+          height: 3rem;
+        }
+
+        &-text {
+          font-size: 2.5rem;
+          font-weight: 400;
+          letter-spacing: .1rem;
+          margin: 0;
+          padding: 1.5rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    padding: 6rem 1rem;
+
+    &-box {
+      margin: 0;
+      padding: 6rem 1rem;
+
+      &-main {
+        font-size: 6.5rem;
+        letter-spacing: .6rem;
+        line-height: 7rem;
+      }
+
+      &-sub {
+        font-size: 3rem;
+
+        br {
+          display: block;
+        }
+      }
+
+      &-link {
+        border-width: .25rem;
+        font-size: 2.5rem;
+        letter-spacing: .3rem;
+        padding: 1rem 12rem;
+      }
+    }
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 6px;
+    /* 10 */
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 7px;
+    /* 11 */
+  }
+}
+
+@media screen and (min-width: 425px) {
+  html {
+    font-size: 8px;
+    /* 12 */
+  }
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  html {
+    font-size: 6.5px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,233 @@
+
+.footer {
+  display: grid;
+  grid-gap: 1.3rem;
+  grid-template-columns: 1fr 1fr;
+  margin: .187rem 3.5rem;
+  padding: 2rem 0;
+}
+
+.social {
+  justify-content: center;
+  overflow: hidden;
+
+  &-heading {
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+
+    span {
+      color: #ff4dff;
+      font-family: 'Merriweather', sans-serif;
+      font-size: 1rem;
+      letter-spacing: .1rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &-links {
+    color: #fff;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+
+    &-item {
+      background-color: #000;
+      border-top: .15rem solid #fff;
+      display: inline;
+      flex-grow: 1;
+      padding: .74rem;
+      text-align: center;
+
+      &:nth-child(even) {
+        border-left: .0625rem solid #fff;
+        border-right: .0625rem solid #fff;
+      }
+
+      a {
+        color: #fff;
+        letter-spacing: .075rem;
+        padding-left: .625rem;
+        text-decoration: none;
+      }
+    }
+
+    #tab-1:hover {
+      background: url('../img/social-active.png');
+      border-top: .15rem solid #000;
+      transform: translateY(.15rem);
+    }
+
+    #tab-2:hover {
+      background: url('../img/social-active.png');
+      border-top: .15rem solid #000;
+      transform: translateY(.15rem);
+    }
+
+    #tab-3:hover {
+      background: url('../img/social-active.png');
+      border-top: .15rem solid #000;
+      transform: translateY(.15rem);
+    }
+  }
+
+  &-tab {
+    background-color: #e1e1e1;
+    margin-top: 1rem;
+    padding: 0 1rem;
+
+    &-container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 1rem;
+
+      &-heading {
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: .15rem;
+        text-transform: uppercase;
+
+        span {
+          color: #ff4dff;
+          font-family: "Oswald", sans-serif;
+          font-size: 1rem;
+          letter-spacing: .075rem;
+          text-transform: uppercase;
+        }
+      }
+
+      &-nav {
+        i {
+          color: #ff4dff;
+          cursor: pointer;
+          font-size: 1.5rem;
+          padding: 5px;
+
+          &:last-of-type {
+            padding-left: .5rem;
+          }
+        }
+      }
+    }
+
+    &-twt {
+      background: #e1e1e1;
+      display: flex;
+      min-width: 100%;
+      overflow-x: auto;
+
+      &-tweet {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin: 0 .75rem 1.5rem 0;
+
+        &-card {
+          background: #fff;
+          padding: 1rem .7rem 1.2rem .7rem;
+
+          &-heading {
+            display: flex;
+
+            i {
+              color: #d345e8;
+              font-size: 1.187rem;
+            }
+
+            &-text {
+              font-weight: 400;
+              font-size: 1em;
+              margin: 0;
+              padding: 0 .625rem;
+
+              span {
+                color: #ff66ff;
+                font-family: 'Lato', sans-serif;
+                font-size: .8rem;
+                text-transform: none;
+              }
+            }
+          }
+        }
+
+        &-info {
+          background: #d345e8;
+          color: white;
+          display: flex;
+          font-family: "Lato" sans-serif;
+          font-size: .75rem;
+          font-weight: 400;
+          justify-content: space-between;
+          padding: 0 1rem;
+
+          &-actions {
+            align-self: center;
+
+            i {
+              color: white;
+              padding: 0 .175rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.directions {
+  &-heading {
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+
+    span {
+      color: #ff4dff;
+      font-family: 'Merriweather', sans-serif;
+      font-size: 1rem;
+      letter-spacing: .1rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &-address {
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    height: 2.95rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    transform: translateY(2px);
+
+    &-main {
+      letter-spacing: .075rem;
+      margin: 0;
+      padding: 0;
+      padding-right: 1rem;
+    }
+
+    &-sub {
+      color: #fff;
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      letter-spacing: .0625rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &-map {
+    background: #f5f5f5;
+    padding: .9rem;
+
+    &#map {
+      height: 20rem;
+      width: 100%;
+    }
+  }
+}

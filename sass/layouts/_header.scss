@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  height: 2.5rem;
+  justify-content: flex-end;
+}
+
+.get-connected {
+  align-items: center;
+  display: flex;
+  margin: 0 1.5rem;
+
+  &-text {
+    color: #de53f3;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+  }
+}
+
+.social-icons-list {
+  display: flex;
+  list-style: none;
+}
+
+.social-icons-item {
+
+  &-img {
+    color: black;
+    height: 1rem;
+  }
+
+  a:last-child {
+    margin-right: 1.5rem;
+  }
+}
+
+.search-events {
+  align-self: center;
+
+  &-input {
+    background-color: #ddd;
+    border-radius: 5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .1rem;
+    padding: .375rem 1rem;
+    width: 21rem;
+  }
+
+  &-icon {
+    position: absolute;
+    right: 10.5rem;
+    top: .75rem;
+    width: 1rem;
+    z-index: 10;
+  }
+}
+
+.login {
+  align-items: center;
+  background: #de53f3;
+  color: white;
+  display: flex;
+  margin-left: 1.25rem;
+  padding: 0 1.25rem;
+
+  &:hover {
+    background: #2e2e2e;
+    color: #de53f3;
+  }
+
+  &-text {
+    font-size: .75rem;
+    letter-spacing: .1rem;
+    margin: 0 .625rem;
+    text-transform: uppercase;
+  }
+
+  &-img {
+    margin-right: 1.25rem;
+    width: 1.5rem;
+  }
+}
+
+.navigaton {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  position: relative;
+
+  &-logo {
+
+    &-img {
+      margin-top: -2rem;
+      position: absolute;
+      width: 13rem;
+    }
+
+    &-hamburger {
+      display: none;
+    }
+  }
+
+  &-list {
+    background-color: #000;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+
+    &-item {
+      float: left;
+
+      &-link {
+        align-items: center;
+        color: white;
+        display: flex;
+        height: 3.5rem;
+        letter-spacing: .1rem;
+        padding: 1rem 4.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+          background: #d345e8;
+        }
+      }
+    }
+  }
+}

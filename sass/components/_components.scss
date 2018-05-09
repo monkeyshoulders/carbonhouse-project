@@ -1,0 +1,172 @@
+.main-events {
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 1rem 3rem;
+  padding-bottom: 4rem;
+}
+
+.upcoming {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &-heading {
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: .075rem;
+    text-transform: uppercase;
+  }
+
+  &-layout {
+    padding: 1rem 0;
+
+    &-img {
+      padding: .5rem;
+      width: 1.75rem;
+
+      &:first-child {
+        background-color: #fff;
+        padding: .5rem;
+      }
+
+      &:last-child {
+        background: none;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+.hr {
+  background-color: #000;
+  height: .125rem;
+  margin: .25rem 0;
+}
+
+.event-grid {
+  display: grid;
+  grid-gap: .625rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+
+.card-m {
+  display: none;
+}
+
+.event-card {
+  background-color: white;
+  width: 100%;
+
+  &-img {
+    height: auto;
+    width: 100%;
+  }
+
+  &-sch {
+    background-color: black;
+    color: #ff4dff;
+    display: flex;
+    font-size: .9rem;
+    justify-content: space-between;
+    letter-spacing: .075rem;
+    margin-top: -0.4rem;
+    padding: 0;
+    text-transform: uppercase;
+
+    &-date {
+      font-weight: 300;
+      margin: .5rem .8rem;
+      padding-left: .625rem;
+    }
+
+    &-day {
+      background: url('../img/day-rectangle.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: .3rem;
+      padding: 0 1.3rem;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &-details {
+    padding: 1.25rem;
+    text-align: center;
+
+    &-main {
+      color: #ff4dff;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 2.3rem;
+      margin: 0;
+      padding-top: .625rem;
+      text-transform: uppercase;
+    }
+
+    &-sub {
+      font-family: 'Merriweather', serif;
+      font-size: 1.125rem;
+      margin: .625rem;
+      padding: 0;
+      font-weight: 400;
+      text-transform: capitalize;
+
+      span {
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+.newsletter {
+  align-items: center;
+  background: url('../img/purple_crowd.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+
+  &-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    padding: 3rem 7rem;
+    text-align: center;
+
+    &-main {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: .3rem;
+    }
+
+    &-sub {
+      color: #ff4dff;
+      font-family: 'Merriweather', sans-serif;
+      margin: .5rem 0 3rem 0;
+      letter-spacing: .1rem;
+
+      br {
+        display: none;
+      }
+    }
+
+    &-link {
+      border: .125rem solid #fff;
+      color: #fff;
+      letter-spacing: .125rem;
+      padding: .6rem 4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #ff4dff;
+        border: .125rem solid #ff4dff;
+      }
+    }
+  }
+}
