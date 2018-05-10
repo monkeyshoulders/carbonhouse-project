@@ -9,3 +9,22 @@ $darkest-black: #1d1d1d;
 $black: #000;
 $white: #fff;
 $dark-white: #f5f5f5;
+
+
+$map: (
+  320px: 10px,
+  425px: 11px,
+  500px: 12px,
+  1200px: 15px,
+  1300px: 20px,
+
+);
+
+@each $key, $val in $map {
+
+  @media screen and (min-width: $key){
+    html {
+      font-size: $val
+    }
+  }
+}
