@@ -44,7 +44,7 @@
     font-family: 'Oswald', sans-serif;
     letter-spacing: .1rem;
     padding: .375rem 1rem;
-    width: 21rem;
+    width: 20rem;
   }
 
   &-icon {
@@ -92,41 +92,38 @@
   &-logo {
 
     &-img {
-      margin-top: -2rem;
+      margin: -2rem 0 0 2.75rem;
       position: absolute;
       width: 13rem;
     }
+  }
 
-    &-hamburger {
-      display: none;
-    }
+  &-hamburger {
+    display: none;
   }
 
   &-list {
     background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     list-style: none;
     margin: 0;
-    overflow: hidden;
-    padding: 0;
 
-    &-item {
-      float: left;
+    &-item, a {
+      align-items: center;
+      color: white;
+      display: flex;
+      height: 3.5rem;
+      letter-spacing: .1rem;
+      padding: 1rem 4.25rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
 
-      &-link {
-        align-items: center;
-        color: white;
-        display: flex;
-        height: 3.5rem;
-        letter-spacing: .1rem;
-        padding: 1rem 4.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none;
-
-        &:hover {
-          background: #d345e8;
-        }
+      &:hover {
+        background: #d345e8;
       }
     }
   }

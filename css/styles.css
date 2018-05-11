@@ -22,7 +22,7 @@ body {
 
 @media screen and (min-width: 1300px) {
   html {
-    font-size: 20px; } }
+    font-size: 15px; } }
 
 .main-events {
   background-color: #e5e5e5;
@@ -39,80 +39,74 @@ body {
     font-weight: 400;
     letter-spacing: .075rem;
     text-transform: uppercase; }
-  .upcoming-layout {
-    padding: 1rem 0; }
-    .upcoming-layout-img {
-      padding: .5rem;
-      width: 1.75rem; }
-      .upcoming-layout-img:first-child {
-        background-color: #fff;
-        padding: .5rem; }
-      .upcoming-layout-img:last-child {
-        background: none;
-        padding-left: 1rem; }
+  .upcoming-layout-img {
+    margin: 0;
+    padding: .75rem;
+    width: 1.75rem; }
+    .upcoming-layout-img:first-child {
+      background-color: #fff; }
+    .upcoming-layout-img:last-child {
+      background: none; }
 
 .hr {
   background-color: #000;
   height: .125rem;
   margin: .25rem 0; }
 
-.event-grid {
+.grid {
   display: grid;
   grid-gap: .625rem;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 2rem; }
+  margin: 2rem 0 0 0; }
+  .grid-event-card {
+    background-color: white;
+    width: 100%; }
+    .grid-event-card-img {
+      height: auto;
+      width: 100%; }
+    .grid-event-card-sch {
+      background-color: black;
+      color: #ff4dff;
+      display: flex;
+      font-size: .9rem;
+      justify-content: space-between;
+      letter-spacing: .075rem;
+      margin-top: -0.4rem;
+      text-transform: uppercase; }
+      .grid-event-card-sch-date {
+        font-weight: 300;
+        margin-left: 2rem; }
+      .grid-event-card-sch-day {
+        background: url("../img/day-rectangle.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: .3rem;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 1; }
+    .grid-event-card-details {
+      padding: 1.25rem;
+      text-align: center; }
+      .grid-event-card-details-main {
+        color: #ff4dff;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .25rem;
+        margin: 0;
+        padding-top: .625rem;
+        text-transform: uppercase; }
+      .grid-event-card-details-sub {
+        font-family: 'Merriweather', serif;
+        font-size: 1.125rem;
+        margin: .625rem;
+        padding: 0;
+        font-weight: 400;
+        text-transform: capitalize; }
+        .grid-event-card-details-sub span {
+          text-transform: lowercase; }
 
 .card-m {
   display: none; }
-
-.event-card {
-  background-color: white;
-  width: 100%; }
-  .event-card-img {
-    height: auto;
-    width: 100%; }
-  .event-card-sch {
-    background-color: black;
-    color: #ff4dff;
-    display: flex;
-    font-size: .9rem;
-    justify-content: space-between;
-    letter-spacing: .075rem;
-    margin-top: -0.4rem;
-    padding: 0;
-    text-transform: uppercase; }
-    .event-card-sch-date {
-      font-weight: 300;
-      margin: .5rem .8rem;
-      padding-left: .625rem; }
-    .event-card-sch-day {
-      background: url("../img/day-rectangle.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      bottom: .3rem;
-      padding: 0 1.3rem;
-      position: relative;
-      z-index: 1; }
-  .event-card-details {
-    padding: 1.25rem;
-    text-align: center; }
-    .event-card-details-main {
-      color: #ff4dff;
-      font-size: 1.6rem;
-      font-weight: 400;
-      letter-spacing: 2.3rem;
-      margin: 0;
-      padding-top: .625rem;
-      text-transform: uppercase; }
-    .event-card-details-sub {
-      font-family: 'Merriweather', serif;
-      font-size: 1.125rem;
-      margin: .625rem;
-      padding: 0;
-      font-weight: 400;
-      text-transform: capitalize; }
-      .event-card-details-sub span {
-        text-transform: lowercase; }
 
 .newsletter {
   align-items: center;
@@ -312,7 +306,7 @@ body {
     font-family: 'Oswald', sans-serif;
     letter-spacing: .1rem;
     padding: .375rem 1rem;
-    width: 21rem; }
+    width: 20rem; }
   .search-events-icon {
     position: absolute;
     right: 10.5rem;
@@ -346,32 +340,31 @@ body {
   padding-left: 2.5rem;
   position: relative; }
   .navigaton-logo-img {
-    margin-top: -2rem;
+    margin: -2rem 0 0 2.75rem;
     position: absolute;
     width: 13rem; }
-  .navigaton-logo-hamburger {
+  .navigaton-hamburger {
     display: none; }
   .navigaton-list {
     background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     list-style: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0; }
-    .navigaton-list-item {
-      float: left; }
-      .navigaton-list-item-link {
-        align-items: center;
-        color: white;
-        display: flex;
-        height: 3.5rem;
-        letter-spacing: .1rem;
-        padding: 1rem 4.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none; }
-        .navigaton-list-item-link:hover {
-          background: #d345e8; }
+    margin: 0; }
+    .navigaton-list-item, .navigaton-list a {
+      align-items: center;
+      color: white;
+      display: flex;
+      height: 3.5rem;
+      letter-spacing: .1rem;
+      padding: 1rem 4.25rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none; }
+      .navigaton-list-item:hover, .navigaton-list a:hover {
+        background: #d345e8; }
 
 .footer {
   display: grid;
