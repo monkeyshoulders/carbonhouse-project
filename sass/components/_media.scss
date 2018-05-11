@@ -1,5 +1,12 @@
 @media screen and (max-width: 500px) {
 
+  .hamburger {
+    left: 43rem;
+    text-decoration: none;
+    top: 3.5rem;
+    z-index: 33;
+  }
+
   .card-m {
     background-color: $white;
     display: block;

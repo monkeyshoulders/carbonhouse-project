@@ -80,6 +80,36 @@ body {
   html {
     font-size: 30px; } }
 
+.info-window {
+  position: absolute;
+  z-index: 33;
+  top: 131.25rem;
+  left: 53.5rem; }
+  @media screen and (min-width: 500px) {
+    .info-window {
+      width: 10rem; } }
+  @media screen and (min-width: 768px) {
+    .info-window {
+      width: 12rem;
+      top: 130rem;
+      left: 51rem; } }
+  @media screen and (min-width: 1024px) {
+    .info-window {
+      width: 12rem;
+      top: 132rem; } }
+  @media screen and (min-width: 1400px) {
+    .info-window {
+      top: 133rem;
+      left: 56rem; } }
+  @media screen and (min-width: 2500px) {
+    .info-window {
+      top: 136rem;
+      left: 59rem; } }
+
+.hamburger {
+  position: absolute;
+  z-index: -5; }
+
 .main-events {
   background-color: #e5e5e5;
   margin: 0;
@@ -228,6 +258,11 @@ body {
         border: 0.125rem solid #ff4dff; }
 
 @media screen and (max-width: 500px) {
+  .hamburger {
+    left: 43rem;
+    text-decoration: none;
+    top: 3.5rem;
+    z-index: 33; }
   .card-m {
     background-color: #fff;
     display: block;

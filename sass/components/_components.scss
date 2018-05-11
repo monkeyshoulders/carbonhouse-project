@@ -1,3 +1,35 @@
+.info-window {
+  position: absolute;
+  z-index: 33;
+  top: 131.25rem;
+  left: 53.5rem;
+  @media screen and (min-width: 500px){
+    width: 10rem;
+  }
+  @media screen and (min-width: 768px){
+    width: 12rem;
+    top: 130rem;
+    left: 51rem;
+  }
+  @media screen and (min-width: 1024px){
+    width: 12rem;
+    top: 132rem;
+  }
+  @media screen and (min-width: 1400px){
+    top: 133rem;
+    left: 56rem;
+  }
+  @media screen and (min-width: 2500px){
+    top: 136rem;
+    left: 59rem;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  z-index: -5;
+}
+
 .main-events {
   background-color: $grey;
   margin: 0;
