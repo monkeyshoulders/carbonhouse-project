@@ -97,6 +97,11 @@ body {
     .info-window {
       width: 12rem;
       top: 132rem; } }
+  @media screen and (min-width: 1200px) {
+    .info-window {
+      width: 12rem;
+      top: 131.25rem;
+      left: 54rem; } }
   @media screen and (min-width: 1400px) {
     .info-window {
       top: 133rem;
@@ -644,5 +649,5 @@ body {
   background: #f5f5f5;
   padding: .9rem; }
   .directions-map #map {
-    height: 21.3rem;
+    height: 21rem;
     width: 100%; }
