@@ -6,23 +6,23 @@ body {
 
 @media screen and (min-width: 320px) {
   html {
-    font-size: 10px; } }
+    font-size: 7px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 8px; } }
+
+@media screen and (min-width: 425px) {
+  html {
+    font-size: 9px; } }
 
 @media screen and (min-width: 500px) {
   html {
-    font-size: 11px; } }
-
-@media screen and (min-width: 750px) {
-  html {
-    font-size: 11.5px; } }
+    font-size: 10px; } }
 
 @media screen and (min-width: 950px) {
   html {
     font-size: 12px; } }
-
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 13px; } }
 
 @media screen and (min-width: 1100px) {
   html {
@@ -69,16 +69,30 @@ body {
   margin: 0;
   padding: 1rem 3rem;
   padding-bottom: 4rem; }
+  @media screen and (max-width: 500px) {
+    .main-events {
+      padding: 1rem; } }
 
 .upcoming {
   align-items: center;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 500px) {
+    .upcoming {
+      justify-content: center; } }
   .upcoming-heading {
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: .075rem;
     text-transform: uppercase; }
+    @media screen and (max-width: 500px) {
+      .upcoming-heading {
+        font-size: 4rem;
+        letter-spacing: .3rem;
+        margin: 2rem 0; } }
+  @media screen and (max-width: 500px) {
+    .upcoming-layout {
+      display: none; } }
   .upcoming-layout-img {
     margin: 0;
     padding: .75rem;
@@ -92,15 +106,26 @@ body {
   background-color: #000;
   height: .125rem;
   margin: .25rem 0; }
+  @media screen and (max-width: 500px) {
+    .hr {
+      height: .25rem; } }
 
 .grid {
   display: grid;
   grid-gap: .625rem;
   grid-template-columns: repeat(3, 1fr);
   margin: 2rem 0 0 0; }
+  @media screen and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+      margin: 0; } }
   .grid-event-card {
     background-color: #fff;
     width: 100%; }
+    @media screen and (max-width: 500px) {
+      .grid-event-card {
+        display: none; } }
     .grid-event-card-img {
       height: auto;
       width: 100%; }
@@ -186,41 +211,7 @@ body {
         background-color: #ff4dff;
         border: 0.125rem solid #ff4dff; }
 
-@media screen and (min-width: 300px) and (max-width: 500px) {
-  .header {
-    display: none; }
-  .navigation {
-    padding: .75rem; }
-    .navigation-list {
-      display: none; }
-    .navigation-logo-img {
-      margin: 0;
-      padding-left: .75rem;
-      position: relative;
-      width: 20rem; }
-    .navigation-logo-hamburger {
-      display: block;
-      padding: 1rem 2rem; }
-  .main-events {
-    padding: 1rem; }
-  .upcoming {
-    align-items: center;
-    justify-content: center; }
-    .upcoming-heading {
-      font-size: 4.5rem;
-      letter-spacing: .5rem;
-      margin: 2rem 0; }
-    .upcoming-layout {
-      display: none; }
-  .hr {
-    background-color: #000;
-    height: .25rem; }
-  .event-grid {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin: 0; }
-  .event-card {
-    display: none; }
+@media screen and (max-width: 500px) {
   .card-m {
     background-color: #fff;
     display: block;
@@ -229,16 +220,16 @@ body {
     .card-m-event {
       display: flex; }
       .card-m-event-img {
-        height: 16em;
-        padding: 10px 0 15px 10px;
-        width: 20em; }
+        height: 14rem;
+        padding: 1rem 0 1.5rem 1rem;
+        width: 17rem; }
       .card-m-event-details {
-        padding: 10px;
+        padding: 1rem;
         text-align: left; }
         .card-m-event-details-main {
           color: #ff4dff;
           font-weight: 400;
-          font-size: 4rem;
+          font-size: 3.75rem;
           letter-spacing: .25rem;
           margin: 0;
           text-transform: uppercase; }
@@ -246,7 +237,7 @@ body {
             line-height: 5rem; }
         .card-m-event-details-sub {
           font-family: 'Merriweather', serif;
-          font-size: 2.5rem;
+          font-size: 2.1rem;
           font-weight: 400;
           letter-spacing: .25rem;
           margin: 5px 0;
@@ -259,34 +250,40 @@ body {
       justify-content: space-between;
       margin-top: -5px; }
       .card-m-sch-date {
-        font-size: 2.4rem;
-        margin: .8em;
+        font-size: 2rem;
+        margin: .75em;
         padding-left: 1rem;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        letter-spacing: 1.2px; }
       .card-m-sch-day {
         background: url("https://raw.githubusercontent.com/monkeyshoulders/carbonhouse-project/master/img/day-rectangle.png");
         background-repeat: no-repeat;
         background-size: cover;
-        bottom: 5px;
-        padding: 0 20px;
+        bottom: .75rem;
         position: relative;
         z-index: 1; }
-    .card-m-buy-tix-m {
+        .card-m-sch-day h3 {
+          padding: 0 2rem 0 4.5rem;
+          font-size: 1.9rem;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          margin: 1.5rem 0 0 0; }
+    .card-m-tix {
       text-decoration: none; }
-      .card-m-buy-tix-m-buy-tix-m-box {
+      .card-m-tix-box {
         background: #d345e8;
         color: white;
         display: flex;
         justify-content: center;
         margin: 0;
         padding: 0; }
-        .card-m-buy-tix-m-buy-tix-m-box-img {
+        .card-m-tix-box-img {
           align-self: center;
-          height: 3rem; }
-        .card-m-buy-tix-m-buy-tix-m-box-text {
-          font-size: 2.5rem;
+          height: 2.25rem; }
+        .card-m-tix-box-text {
+          font-size: 2.25rem;
           font-weight: 400;
-          letter-spacing: .1rem;
+          letter-spacing: .2rem;
           margin: 0;
           padding: 1.5rem;
           text-transform: uppercase; }
@@ -297,24 +294,28 @@ body {
       padding: 6rem 1rem; }
       .newsletter-box-main {
         font-size: 6.5rem;
-        letter-spacing: .6rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
         line-height: 7rem; }
       .newsletter-box-sub {
-        font-size: 3rem; }
+        margin: 1rem 0 4rem 0;
+        font-size: 2.3rem;
+        letter-spacing: .25rem; }
         .newsletter-box-sub br {
           display: block; }
       .newsletter-box-link {
         border-width: .25rem;
         font-size: 2.5rem;
-        letter-spacing: .3rem;
-        padding: 1rem 12rem; }
-  .footer {
-    grid-template-columns: 1fr; } }
+        letter-spacing: .1rem;
+        padding: 1.5rem 11rem; } }
 
 .header {
   display: flex;
   height: 2.5rem;
   justify-content: flex-end; }
+  @media screen and (max-width: 500px) {
+    .header {
+      display: none; } }
 
 .get-connected {
   align-items: center;
@@ -373,38 +374,48 @@ body {
     margin-right: 1.25rem;
     width: 1.5rem; }
 
-.navigaton {
-  background-color: black;
+.navigaton-logo-img {
+  margin: -2rem 0 0 2.75rem;
+  position: absolute;
+  width: 13rem; }
+  @media screen and (max-width: 500px) {
+    .navigaton-logo-img {
+      margin: .5rem;
+      margin-left: .5rem;
+      position: absolute;
+      width: 20rem;
+      height: 9.5rem; } }
+
+.navigaton-logo-hamburger {
+  display: none; }
+
+.navigaton-list {
+  background-color: #000;
   display: flex;
-  justify-content: space-between;
-  padding-left: 2.5rem;
-  position: relative; }
-  .navigaton-logo-img {
-    margin: -2rem 0 0 2.75rem;
-    position: absolute;
-    width: 13rem; }
-  .navigaton-hamburger {
-    display: none; }
-  .navigaton-list {
-    background-color: #000;
-    display: flex;
-    justify-content: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0; }
+  .navigaton-list-item, .navigaton-list a {
     align-items: center;
-    list-style: none;
-    margin: 0; }
-    .navigaton-list-item, .navigaton-list a {
-      align-items: center;
-      color: white;
-      display: flex;
-      height: 3.5rem;
-      letter-spacing: .1rem;
-      padding: 1rem 4.25rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-align: center;
-      text-decoration: none; }
-      .navigaton-list-item:hover, .navigaton-list a:hover {
-        background: #d345e8; }
+    color: #fff;
+    display: flex;
+    height: 3.5rem;
+    letter-spacing: .1rem;
+    padding: 1rem 4.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none; }
+    @media screen and (max-width: 500px) {
+      .navigaton-list-item, .navigaton-list a {
+        color: #000;
+        padding: 3.6rem; } }
+    .navigaton-list-item:hover, .navigaton-list a:hover {
+      background: #d345e8; }
+      @media screen and (max-width: 500px) {
+        .navigaton-list-item:hover, .navigaton-list a:hover {
+          background-color: #000; } }
 
 .footer {
   display: grid;
@@ -412,6 +423,9 @@ body {
   grid-template-columns: 1fr 1fr;
   margin: .187rem 3.5rem;
   padding: 2rem 0; }
+  @media screen and (max-width: 500px) {
+    .footer {
+      grid-template-columns: 1fr; } }
 
 .social {
   justify-content: center;

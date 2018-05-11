@@ -5,6 +5,10 @@
   grid-template-columns: 1fr 1fr;
   margin: .187rem 3.5rem;
   padding: 2rem 0;
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .social {

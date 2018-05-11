@@ -1,65 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 500px) {
-  .header {
-    display: none;
-  }
-
-  .navigation {
-    padding: .75rem;
-
-    &-list {
-      display: none;
-    }
-
-    &-logo-img {
-      margin: 0;
-      padding-left: .75rem;
-      position: relative;
-      width: 20rem;
-    }
-
-    &-logo-hamburger {
-      display: block;
-      padding: 1rem 2rem;
-    }
-  }
-  // .navigation i {
-  //   align-self: center;
-  //   display: flex;
-  //   color: #fff;
-  //   padding-right: 1rem;
-
-  .main-events {
-    padding: 1rem;
-  }
-  .upcoming {
-    align-items: center;
-    justify-content: center;
-
-    &-heading {
-      font-size: 4.5rem;
-      letter-spacing: .5rem;
-      margin: 2rem 0;
-    }
-
-    &-layout {
-      display: none;
-    }
-  }
-
-  .hr {
-    background-color: $black;
-    height: .25rem;
-  }
-
-  .event-grid {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin: 0;
-  }
-
-  .event-card {
-    display: none;
-  }
+@media screen and (max-width: 500px) {
 
   .card-m {
     background-color: $white;
@@ -71,19 +10,19 @@
       display: flex;
 
       &-img {
-        height: 16em;
-        padding: 10px 0 15px 10px;
-        width: 20em;
+        height: 14rem;
+        padding: 1rem 0 1.5rem 1rem;
+        width: 17rem;
       }
 
       &-details {
-        padding: 10px;
+        padding: 1rem;
         text-align: left;
 
         &-main {
           color: $pink;
           font-weight: 400;
-          font-size: 4rem;
+          font-size: 3.75rem;
           letter-spacing: .25rem;
           margin: 0;
           text-transform: uppercase;
@@ -95,7 +34,7 @@
 
         &-sub {
           font-family: 'Merriweather', serif;
-          font-size: 2.5rem;
+          font-size: 2.1rem;
           font-weight: 400;
           letter-spacing: .25rem;
           margin: 5px 0;
@@ -113,27 +52,35 @@
       margin-top: -5px;
 
       &-date {
-        font-size: 2.4rem;
-        margin: .8em;
+        font-size: 2rem;
+        margin: .75em;
         padding-left: 1rem;
         text-transform: uppercase;
+        letter-spacing: 1.2px;
       }
 
       &-day {
         background: url('https://raw.githubusercontent.com/monkeyshoulders/carbonhouse-project/master/img/day-rectangle.png');
         background-repeat: no-repeat;
         background-size: cover;
-        bottom: 5px;
-        padding: 0 20px;
+        bottom: .75rem;
         position: relative;
         z-index: 1;
+
+        h3 {
+          padding: 0 2rem 0 4.5rem;
+          font-size: 1.9rem;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          margin: 1.5rem 0 0 0;
+        }
       }
     }
 
-    &-buy-tix-m {
+    &-tix {
       text-decoration: none;
 
-      &-buy-tix-m-box {
+      &-box {
         background: $dark-pink;
         color: white;
         display: flex;
@@ -143,13 +90,13 @@
 
         &-img {
           align-self: center;
-          height: 3rem;
+          height: 2.25rem;
         }
 
         &-text {
-          font-size: 2.5rem;
+          font-size: 2.25rem;
           font-weight: 400;
-          letter-spacing: .1rem;
+          letter-spacing: .2rem;
           margin: 0;
           padding: 1.5rem;
           text-transform: uppercase;
@@ -167,12 +114,15 @@
 
       &-main {
         font-size: 6.5rem;
-        letter-spacing: .6rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
         line-height: 7rem;
       }
 
       &-sub {
-        font-size: 3rem;
+        margin: 1rem 0 4rem 0;
+        font-size: 2.3rem;
+        letter-spacing: .25rem;
 
         br {
           display: block;
@@ -182,13 +132,9 @@
       &-link {
         border-width: .25rem;
         font-size: 2.5rem;
-        letter-spacing: .3rem;
-        padding: 1rem 12rem;
+        letter-spacing: .1rem;
+        padding: 1.5rem 11rem;
       }
     }
-  }
-
-  .footer {
-    grid-template-columns: 1fr;
   }
 }
