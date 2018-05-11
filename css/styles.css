@@ -421,74 +421,83 @@ body {
       background: url("../img/social-active.png");
       border-top: .15rem solid #000;
       transform: translateY(0.15rem); }
-  .social-tab {
+  .social-container {
     background-color: #e1e1e1;
     margin-top: 1rem;
     padding: 0 1rem; }
-    .social-tab-container {
+    .social-container-top {
       align-items: center;
       display: flex;
       justify-content: space-between;
       margin: 0 1rem; }
-      .social-tab-container-heading {
+      .social-container-top h2 {
         font-size: 1.1rem;
         font-weight: 400;
         letter-spacing: .15rem;
         text-transform: uppercase; }
-        .social-tab-container-heading span {
-          color: #ff4dff;
-          font-family: "Oswald", sans-serif;
-          font-size: 1rem;
-          letter-spacing: .075rem;
-          text-transform: uppercase; }
-      .social-tab-container-nav i {
+      .social-container-top span {
         color: #ff4dff;
-        cursor: pointer;
-        font-size: 1.5rem;
-        padding: 5px; }
-        .social-tab-container-nav i:last-of-type {
-          padding-left: .5rem; }
-    .social-tab-twt {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: .075rem;
+        text-transform: uppercase; }
+    .social-container-nav i {
+      color: #ff4dff;
+      cursor: pointer;
+      font-size: 1.5rem;
+      padding: 1rem;
+      padding-right: 0; }
+      .social-container-nav i i:last-of-type {
+        padding-left: .75rem; }
+    .social-container-scroll {
       background: #e1e1e1;
       display: flex;
       min-width: 100%;
       overflow-x: auto; }
-      .social-tab-twt-tweet {
+      .social-container-scroll-tweet {
+        display: flex;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         margin: 0 .75rem 1.5rem 0; }
-        .social-tab-twt-tweet-card {
+        .social-container-scroll-tweet-card {
           background: #fff;
-          padding: 1rem .7rem 1.2rem .7rem; }
-          .social-tab-twt-tweet-card-heading {
-            display: flex; }
-            .social-tab-twt-tweet-card-heading i {
+          margin-right: 1rem; }
+          .social-container-scroll-tweet-card-heading {
+            display: flex;
+            padding: 1.5rem;
+            padding-bottom: 0; }
+            .social-container-scroll-tweet-card-heading i {
               color: #d345e8;
               font-size: 1.187rem; }
-            .social-tab-twt-tweet-card-heading-text {
+            .social-container-scroll-tweet-card-heading p {
               font-weight: 400;
-              font-size: 1em;
+              font-size: 1.1em;
               margin: 0;
               padding: 0 .625rem; }
-              .social-tab-twt-tweet-card-heading-text span {
-                color: #ff66ff;
-                font-family: 'Lato', sans-serif;
-                font-size: .8rem;
-                text-transform: none; }
-        .social-tab-twt-tweet-info {
-          background: #d345e8;
-          color: white;
-          display: flex;
-          font-family: "Lato" sans-serif;
-          font-size: .75rem;
-          font-weight: 400;
-          justify-content: space-between;
-          padding: 0 1rem; }
-          .social-tab-twt-tweet-info-actions {
-            align-self: center; }
-            .social-tab-twt-tweet-info-actions i {
-              color: white;
-              padding: 0 .175rem; }
+          .social-container-scroll-tweet-card-content {
+            font-family: 'Lato', sans-serif;
+            font-size: .9rem;
+            padding: .25rem 1.3rem;
+            padding-bottom: 3rem;
+            line-height: 1.5; }
+            .social-container-scroll-tweet-card-content span {
+              color: #ff66ff;
+              font-family: 'Lato', sans-serif;
+              text-transform: none; }
+          .social-container-scroll-tweet-card-info {
+            background: #d345e8;
+            color: white;
+            display: flex;
+            font-family: "Lato" sans-serif;
+            font-size: .75rem;
+            font-weight: 400;
+            justify-content: space-between;
+            padding: 0 .75rem; }
+            .social-container-scroll-tweet-card-info-actions {
+              align-self: center; }
+              .social-container-scroll-tweet-card-info-actions i {
+                color: white;
+                padding: 0 .175rem; }
 
 .directions-heading {
   font-size: 1.7rem;
