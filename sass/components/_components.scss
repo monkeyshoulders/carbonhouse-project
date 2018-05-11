@@ -1,5 +1,5 @@
 .main-events {
-  background-color: #e5e5e5;
+  background-color: $grey;
   margin: 0;
   padding: 1rem 3rem;
   padding-bottom: 4rem;
@@ -25,7 +25,7 @@
       width: 1.75rem;
 
       &:first-child {
-        background-color: #fff;
+        background-color: $white;
       }
 
       &:last-child {
@@ -37,7 +37,7 @@
 }
 
 .hr {
-  background-color: #000;
+  background-color: $black;
   height: .125rem;
   margin: .25rem 0;
 }
@@ -50,7 +50,7 @@
   // overflow: hidden;
 
   &-event-card {
-    background-color: white;
+    background-color: $white;
     width: 100%;
 
     &-img {
@@ -59,8 +59,8 @@
     }
 
     &-sch {
-      background-color: black;
-      color: #ff4dff;
+      background-color: $black;
+      color: $pink;
       display: flex;
       font-size: .9rem;
       justify-content: space-between;
@@ -89,7 +89,7 @@
       text-align: center;
 
       &-main {
-        color: #ff4dff;
+        color: $pink;
         font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: .25rem;
@@ -136,7 +136,7 @@
     text-align: center;
 
     &-main {
-      color: #fff;
+      color: $white;
       text-transform: uppercase;
       font-size: 2.5rem;
       margin: 0;
@@ -144,7 +144,7 @@
     }
 
     &-sub {
-      color: #ff4dff;
+      color: $pink;
       font-family: 'Merriweather', sans-serif;
       margin: .5rem 0 3rem 0;
       letter-spacing: .1rem;
@@ -155,16 +155,16 @@
     }
 
     &-link {
-      border: .125rem solid #fff;
-      color: #fff;
+      border: .125rem solid $white;
+      color: $white;
       letter-spacing: .125rem;
       padding: .6rem 4rem;
       text-transform: uppercase;
       text-decoration: none;
 
       &:hover {
-        background-color: #ff4dff;
-        border: .125rem solid #ff4dff;
+        background-color: $pink;
+        border: .125rem solid $pink;
       }
     }
   }

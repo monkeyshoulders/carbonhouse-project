@@ -47,7 +47,7 @@
   }
 
   .hr {
-    background-color: #000;
+    background-color: $black;
     height: .25rem;
   }
 
@@ -62,7 +62,7 @@
   }
 
   .card-m {
-    background-color: white;
+    background-color: $white;
     display: block;
     margin: 3rem auto;
     width: 100%;
@@ -81,7 +81,7 @@
         text-align: left;
 
         &-main {
-          color: #ff66ff;
+          color: $pink;
           font-weight: 400;
           font-size: 4rem;
           letter-spacing: .25rem;
@@ -106,8 +106,8 @@
     }
 
     &-sch {
-      background-color: #000;
-      color: #ff66ff;
+      background-color: $black;
+      color: $pink;
       display: flex;
       justify-content: space-between;
       margin-top: -5px;
@@ -134,7 +134,7 @@
       text-decoration: none;
 
       &-buy-tix-m-box {
-        background: #d345e8;
+        background: $dark-pink;
         color: white;
         display: flex;
         justify-content: center;
